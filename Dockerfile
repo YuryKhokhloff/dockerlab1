@@ -16,7 +16,7 @@ RUN mkdir -p /var/www/yury/
 COPY index.html /var/www/yury
 # 9.	Поместить из папки с докер файлом в директорию /var/www/my_project/img файл img.jpg (поместить туда какую-нибудь картинку). (Х,Д)
 RUN mkdir -p /var/www/yury/img
-COPY img.jpg /var/www/yury/img
+COPY img.jpeg /var/www/yury/img
 # 10.	Задать рекурсивно на папку /var/www/my_project права "владельцу - читать, писать, исполнять; группе - читать, исполнять, остальным - читать, исполнять" (Д)
 RUN chmod -R 755 /var/www/yury
 # 11.	С помощью команды useradd создать пользователя <ваше имя> (Д)
